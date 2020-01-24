@@ -18,15 +18,32 @@ public class Emergency{
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @NotNull
+    @NotNull (message = "First name is required")
     private String first_name;
-    @NotNull
+
+    @NotNull (message = "Last name is required")
     private String last_name;
-    @NotNull
+
+    @NotNull (message = "Patient location is required")
     private String patient_location;
-    @NotNull
+
+    @NotNull (message = "Phone number is required")
     private String phone_number;
-    @NotNull
-    private String description;
     
+    @NotNull (message = "Description of emergency is required")
+    private String description;
+
+    public Emergency(){
+
+    }
+
+    public Emergency(@NotNull String first_name, @NotNull String last_name, @NotNull String patient_location,
+            @NotNull String phone_number, @NotNull String description) {
+        this.first_name = first_name;
+        this.last_name = last_name;
+        this.patient_location = patient_location;
+        this.phone_number = phone_number;
+        this.description = description;
+    }
+
 }
