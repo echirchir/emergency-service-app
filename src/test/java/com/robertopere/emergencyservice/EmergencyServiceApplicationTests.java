@@ -1,12 +1,6 @@
 package com.robertopere.emergencyservice;
 
-
-import java.io.IOException;
-
-import com.robertopere.emergencyservice.repository.EmergencyRepository;
-
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
@@ -16,7 +10,7 @@ class EmergencyServiceApplicationTests {
 	void contextLoads() {
 	}
 
-	@Autowired
+	/*@Autowired
 	private EmergencyRepository repository;
 
 	@Test
@@ -85,7 +79,7 @@ class EmergencyServiceApplicationTests {
         // Then
         //assertTrue(currentNumberOfEmergencies < newNumberOfEmergencies);
         
-    }
+    }*/
 
 
 }
