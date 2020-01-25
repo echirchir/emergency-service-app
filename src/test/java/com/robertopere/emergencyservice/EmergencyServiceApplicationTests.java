@@ -1,14 +1,13 @@
 package com.robertopere.emergencyservice;
 
-import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
+//@SpringBootTest
 class EmergencyServiceApplicationTests {
 
-	@Test
+	/*@Test
 	void contextLoads() {
-	}
+	}*/
 
 	/*@Autowired
 	private EmergencyRepository repository;
