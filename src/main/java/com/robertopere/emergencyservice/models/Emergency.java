@@ -18,12 +18,19 @@ public class Emergency{
     private String first_name;
     @NotNull (message = "Last name field is required")
     private String last_name;
+    @NotNull (message = "Age field is required")
+    private int Age;
     @NotNull (message = "Patient location field is required")
     private String patient_location;
     @NotNull (message = "Phone number field is required")
     private String phone_number;
     @NotNull (message = "Description field is required")
     private String description;
+    @NotNull (message = "Insurance details field is required")
+    private String insurance_details;
+    @NotNull (message = "Type of emergency field is required")  
+    private String emergency;
+
 
     public Emergency(){
 
